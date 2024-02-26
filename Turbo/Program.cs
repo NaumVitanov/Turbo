@@ -8,7 +8,6 @@ namespace Turbo
         {
             WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            // Add all the services needed for the builder.
             builder.Services.AddAllServices(builder.Configuration);
 
             WebApplication app = builder.Build();
